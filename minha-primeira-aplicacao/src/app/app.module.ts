@@ -9,6 +9,8 @@ import { RevistaComponent } from './revista/revista.component';
 import { LivroComponent } from './livro/livro.component';
 import { FilmeComponent } from './filme/filme.component';
 import { ProdutoComponent } from './produto/produto.component';
+import { ClickMeComponent } from './click-me/click-me.component';
+import { CaixaDeTextoComponent } from './caixa-de-texto/caixa-de-texto.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ProdutoComponent } from './produto/produto.component';
     RevistaComponent,
     LivroComponent,
     FilmeComponent,
-    ProdutoComponent
+    ProdutoComponent,
+    ClickMeComponent,
+    CaixaDeTextoComponent
   ],
   imports: [
     BrowserModule
