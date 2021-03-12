@@ -1,5 +1,10 @@
 <nav class="navbar navbar-light bg-light">
   <a class="navbar-brand" routerLink="">{{ titulo }}</a>
+  <a class = "term"
+  (mouseover)="alteraPosicaoDaTooltip($event.x, $event.y); exibeTooltip()"
+  (mouseleave)="escondeTooltip()">Sobre</a>
+  <p class = "tooltip" [class.visible]="visible"
+  [style.left.px]="mouse.x" [style.top.px]="mouse.y">Feito por Thiago Alcarás</p>
 </nav>
 <router-outlet></router-outlet>
 
