@@ -11,6 +11,8 @@ import { FilmeComponent } from './filme/filme.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { ClickMeComponent } from './click-me/click-me.component';
 import { CaixaDeTextoComponent } from './caixa-de-texto/caixa-de-texto.component';
+import { FormsModule } from '@angular/forms';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,12 @@ import { CaixaDeTextoComponent } from './caixa-de-texto/caixa-de-texto.component
     FilmeComponent,
     ProdutoComponent,
     ClickMeComponent,
-    CaixaDeTextoComponent
+    CaixaDeTextoComponent,
+    FormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
